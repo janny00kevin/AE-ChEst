@@ -1,0 +1,11 @@
+{
+  "files.watcherExclude": {
+    "**/.ga/**": true,
+    "**/.git/**": true,
+    "**/.hello/**": true,
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/node_modules/**": true,
+    "**/out/**": true
+  }
+}
