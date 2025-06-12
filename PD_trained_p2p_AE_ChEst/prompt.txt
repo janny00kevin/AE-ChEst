@@ -1,0 +1,19 @@
+
+  inf exp(-0.005*itr)
+    python AE_ChEst/PD_trained_p2p_AE_ChEst/train_PD_AE_MSE.py -cuda 2 -ch inf -eps 30
+      Training completed after 54 epochs. Best loss: 5.062, best n4: 21.950, best 10: 0.685
+      tNMSE:0.996, vNMSE:7.205, -4:15.022, 10:-2.629, l:534.03:   5%|¦?                                   | 5400/100000 [01:02<18:20, 85.94it/s]
+      
+inf exp(-0.0001*itr)
+    lr_l = 1e-4 #5e-5                                             
+    KKT_thres = 1e-2
+python AE_ChEst/PD_trained_p2p_AE_ChEst/train_PD_AE_MSE.py -cuda 1 -ch inf -eps 15                                                                                                  |
+  Stopping training as learning rate reached 4.88e-07 at epoch 128, KKT conditions met.                                                     |
+  Training completed after 128 epochs. Best loss: 8.435, best n4: 40.989, best 10: 0.530                                                    |
+  tNMSE:0.801, vNMSE:8.435, -4:16.127, 10:-2.757, l:5.47, g:6.10e-03, f:-1.92:  13%|¦¦?              | 12800/100000 [03:15<22:09, 65.56it/s]|
+  
+uma
+python AE_ChEst/PD_trained_p2p_AE_ChEst/train_PD_AE_MSE.py -cuda 0 -ch uma -eps 0.4
+  Stopping training as learning rate reached 4.88e-07 at epoch 154, KKT conditions met.
+  Training completed after 154 epochs. Best loss: 0.007, best n4: 0.017, best 10: 0.001
+  tNMSE:0.004, vNMSE:0.007, -4:-17.607, 10:-31.133, l:2.20, g:3.24e-03, f:-0.10:  15%|¦¦¦                 | 15400/100000 [02:50<15:35, 90.41it/s]
